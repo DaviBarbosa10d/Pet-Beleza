@@ -1,0 +1,318 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000000;
+    background-color: #000000;
+
+}
+
+#inicio div h1 {
+    color: #ff725e;
+}
+
+#inicio div h1 b{
+    color: #314049;
+}
+
+
+
+header nav a {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 32px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+header nav a:hover {
+    color: rgb(230, 92, 37);
+    transition: 0.5s;
+}
+
+header a img {
+    width: 150px;
+    height: 150px;
+    
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    /*topo, direita, baixo, esquerda*/
+    padding: 24px 80px 12px 80px;
+    position: relative;
+    background: linear-gradient(150deg, #000000, #2e1501);
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+}
+
+.botao {
+    background-color: #ff725e;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    /*Vertical, Horizontal*/
+    padding: 16px 32px;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+#clinica {
+    display: flex;
+    align-items: center;
+    /*alinhar os itens*/
+    gap: 62px;
+    /*espaçamento*/
+    padding: 64px 80px;
+    /*64 pixeis na vertical e 80px na horizontal*/
+    color: #FFFFFF;
+    background: linear-gradient(150deg, #2e1501, #000000);
+}
+
+#clinica li {
+    margin-bottom: 16px;
+    /*margem em baixo*/
+    margin-left: 32px;
+    /*margem a esquerda*/
+    color:#ff725e;
+}
+
+#farmacia {
+    padding: 64px 80px;
+    text-align: center;
+    /* alinhar texto ao centro*/
+}
+
+#farmacia img {
+    margin: 64px auto;
+}
+
+#farmarcia .paragrafo {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#duvida {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+    color: #FFFFFF;
+}
+
+.duvidas {
+    position: relative;
+}
+
+.duvidas h3 {
+    border: 2px solid #ff725e;
+    border-radius: 8px;
+    /*Borda arrendondada*/
+    cursor: pointer;
+    /*Tipo de Cursor do Mouse*/
+    padding: 24px;
+}
+
+.duvidas img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvidas .paragrafo {
+    border-right: 1px solid #ff725e;
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    /*vertical 0, horizontal 24px*/
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvidas.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+footer {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 64px 80px;
+    background: linear-gradient(150deg, #2e1501, #000000);
+}
+
+footer img,
+footer .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+
+footer {
+    color: #263138;
+    display: flex;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+    color: #ff725e;
+    display: flex;
+}
+
+footer p a {
+    color: #263138;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer hr{
+    margin-bottom: 50px;
+    
+}
+
+#copyright {
+    background-color: #263138;
+    color: #FFFFFF;
+    padding: 24px;
+    text-align: center;
+}
+
+#copyright a {
+    color: #ffffff;
+}
+
+.icons {
+    background-color: #5c5555;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Navegação*/
+
+:root {
+    --red: #d63a25;
+    --white: #fff;
+    --dark: #1e1c2a;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ff725e;
+    width: 100%;
+    background: linear-gradient(150deg, #2e1501, #000000);
+    transition: all 0.5s;
+    position: relative;
+    color: #000000;
+
+}
+
+.navigation .logo {
+    color: #ff725e;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #5a5858;
+    box-shadow: 0 0.1rem 0.5rem #ff725e;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a {
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+    color: #ff725e;
+}
+
+.navigation i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(70, 68, 68);
+    margin: 5px auto;
+    transition: all 0.3s;
+    
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3) {
+    background: #ff725e;
+}
